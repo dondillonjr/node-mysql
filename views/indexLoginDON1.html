@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styleLoginReg.css" />
+    <script src="db_select.js"></script>
+    <!-- 
+    <script type="text/javascript">
+      function validateInsert() {
+        var uname = document.getElementById("uname");
+        var pass = document.getElementById("pass");
+        var email = document.getElementById("email");
+
+        if (
+          uname.value.trim() == "" ||
+          pass.value.trim() == "" ||
+          email.value.trim() == ""
+        ) {
+          alert("No blank values allowed");
+          return false;
+        } else {
+          return true;
+        }
+      } 
+    </script>
+    -->
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <form action="/auth/indexLogin" method="GET">
+            <h3>Please Login:</h3>
+            <input type="text" required placeholder="user name" name="username" />
+            <input type="text" required placeholder="password" name="password" />
+            <button type="submit">login</button>
+            <p class="message">
+                Not Registered? <a href="index">Register</a>
+            </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
